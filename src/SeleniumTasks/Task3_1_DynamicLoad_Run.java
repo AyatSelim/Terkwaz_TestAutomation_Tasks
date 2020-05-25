@@ -44,6 +44,7 @@ public class Task3_1_DynamicLoad_Run extends Base_Class{
 		D_L2_M.Click_Start_Button();
         D_L2_M.Check_Loading_Bar_Invisible();
         D_L2_M.Validate_Text();
+        //comment
 		
 	}
 }
