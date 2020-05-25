@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-13">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="Test_Resources"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/libs/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/libs/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/com.beust.jcommander.source_1.72.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/com.beust.jcommander_1.72.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/com.google.guava_21.0.0.v20170206-1425.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.apache-extras.beanshell.bsh.source_2.0.0.b6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.apache-extras.beanshell.bsh_2.0.0.b6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.testng.eclipse.maven_7.2.0.202005051752.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.testng.eclipse_7.2.0.202005051752.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.testng.source_7.2.0.r202003151902.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.testng_7.2.0.r202003151902.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.yaml.snakeyaml.source_1.21.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/TestNG/plugins/org.yaml.snakeyaml_1.21.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Allure/cdi-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Allure/classworlds-1.1-alpha-2.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

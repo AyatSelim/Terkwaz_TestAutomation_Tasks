@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-25T02:36:49 EET" name="Default suite" finished-at="2020-05-25T02:36:49 EET" duration-ms="55">
+    <groups>
+    </groups>
+    <test started-at="2020-05-25T02:36:49 EET" name="Default test" finished-at="2020-05-25T02:36:49 EET" duration-ms="55">
+      <class name="TEST.Upload_File_Test_Methods">
+        <test-method is-config="true" signature="Test_Setup()[pri:0, instance:TEST.Upload_File_Test_Methods@4c9f8c13]" started-at="2020-05-25T02:36:43 EET" name="Test_Setup" finished-at="2020-05-25T02:36:49 EET" duration-ms="6120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Setup -->
+        <test-method is-config="true" signature="Set_Landing_Page_URL(java.lang.String)[pri:0, instance:TEST.Upload_File_Test_Methods@4c9f8c13]" started-at="2020-05-25T02:36:49 EET" name="Set_Landing_Page_URL" finished-at="1970-01-01T02:00:00 EET" duration-ms="-1590367009656" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated Set_Landing_Page_URL.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Can inject only one of <ITestContext, XmlTest> into a @BeforeTest annotated Set_Landing_Page_URL.
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:299)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:620)
+at org.testng.TestRunner.beforeRun(TestRunner.java:610)
+at org.testng.TestRunner.run(TestRunner.java:581)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Set_Landing_Page_URL -->
+      </class> <!-- TEST.Upload_File_Test_Methods -->
+      <class name="TEST.Upload_File_TestCase">
+        <test-method signature="File_Uploaded_Successfully(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String)[pri:0, instance:TEST.Upload_File_TestCase@5ae50ce6]" started-at="2020-05-25T02:36:49 EET" name="File_Uploaded_Successfully" finished-at="2020-05-25T02:36:49 EET" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Cannot inject @Test annotated Method [File_Uploaded_Successfully] with [interface org.openqa.selenium.WebDriver, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Cannot inject @Test annotated Method [File_Uploaded_Successfully] with [interface org.openqa.selenium.WebDriver, class java.lang.String, class java.lang.String].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:437)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:351)
+at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:788)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- File_Uploaded_Successfully -->
+      </class> <!-- TEST.Upload_File_TestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

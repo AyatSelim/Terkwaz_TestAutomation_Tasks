@@ -1,0 +1,63 @@
+package SeleniumTasks;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+
+public class Task2_Upload_File_Test_Methods{
+
+
+ private WebDriver driver;
+
+ String FILENAME ;
+ String FilePath ;
+ String FileFullPath = System.getProperty("user.dir") +FilePath+FILENAME;
+ 
+ String Link_Xpath = "//div[@class='large-12 columns'][@id='content']/ul/li[18]/a" ;
+ String FileUploader_id = "file-upload" ;
+ String FileSubmit_id = "file-submit";
+ String uploadedFiles_id = "uploaded-files" ;
+ 
+ 
+ WebElement FileUploader = driver.findElement(By.id(FileUploader_id));
+ WebElement FileSubmit = driver.findElement(By.id(FileSubmit_id));
+ WebElement uploadedFiles = driver.findElement(By.id(uploadedFiles_id)); 
+ 
+ 
+ public  void Set_Driver( WebDriver driver) throws InterruptedException 
+ {   
+	this.driver = driver ;
+	
+ }
+ 
+
+ 
+ public  void Upload_File( ) throws InterruptedException 
+ {             
+      
+	    
+	  FileUploader.sendKeys(FileFullPath);
+	
+ }
+ 
+ public  void Submit_File( ) throws InterruptedException 
+ {   
+	  
+	 FileSubmit.click();
+	
+ }
+ 
+ public  void Valiadte_UploadedFile( ) throws InterruptedException 
+ {   
+	 
+	Assert.assertEquals(FILENAME, uploadedFiles.getText());
+	
+ }
+
+ 
+
+
+}
