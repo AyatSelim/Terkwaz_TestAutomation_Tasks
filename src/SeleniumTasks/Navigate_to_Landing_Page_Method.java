@@ -1,15 +1,25 @@
 package SeleniumTasks;
 
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 
-public class Navigate_to_Landing_Page_Method extends Base_Class{
+public class Navigate_to_Landing_Page_Method {
+	
 
+ WebDriver driver ;
 
-
-	public void Set_Landing_Page_URL (String url)
+	public Navigate_to_Landing_Page_Method (WebDriver driver )
 	{
-		driver.navigate().to(url);
+		this.driver = driver ;
+	
+
 			
+	}
+	
+	public void Set_URL (String url) {
+
+		this.driver.navigate().to(url);
 	}
 	
 	

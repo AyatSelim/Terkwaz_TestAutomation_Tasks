@@ -12,7 +12,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="Test_Resources"/>
 	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ahmed Atia/Desktop/Terkwaz-FILES/Selenium/libs/byte-buddy-1.8.15.jar"/>

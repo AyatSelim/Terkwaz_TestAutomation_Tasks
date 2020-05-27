@@ -6,16 +6,22 @@ import org.openqa.selenium.WebElement;
 
 public class Task3_DynamicLoad_Methods {
 	
+	public Task3_DynamicLoad_Methods(WebDriver driver) {
+		this.driver = driver;
+	}
+	
 WebDriver driver ;
 
 String Path = "//div[@class='example']/a[2]" ;
 
-WebElement Link = driver.findElement(By.xpath(Path));
+WebElement Link ;
 	  
 	  
-	  public void Choose_Second_Option()
+	  public void Choose_Second_Option() 
 	  {
+		  Link = this.driver.findElement(By.xpath(Path));
 		  Link.click();
+		  
 	  }
 	  
 	 
