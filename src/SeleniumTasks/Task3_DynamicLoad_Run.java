@@ -3,7 +3,7 @@ package SeleniumTasks;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Task3_1_DynamicLoad_Run extends Base_Class{
+public class Task3_DynamicLoad_Run extends Base_Class{
 	
 	String URL = "https://the-internet.herokuapp.com/";
 	
@@ -11,9 +11,11 @@ public class Task3_1_DynamicLoad_Run extends Base_Class{
 	
 	
 	
-@Test
+@Test (priority=3)
 	public void Task3_run() throws InterruptedException 
 	{	
+		this.Test_Setup();
+		
 		Navigate_to_Landing_Page_Method Nav_To_Page = new Navigate_to_Landing_Page_Method (this.driver) ;
 		Nav_To_Page.Set_URL(URL);
 
@@ -28,6 +30,8 @@ public class Task3_1_DynamicLoad_Run extends Base_Class{
 		D_L2_M.Click_Start_Button();
         D_L2_M.Check_Loading_Bar_Invisible();
         D_L2_M.Validate_Text();
+        
+  
 		
 	}
 

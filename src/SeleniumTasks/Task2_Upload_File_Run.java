@@ -13,9 +13,10 @@ String File_Name = "Test_NG.jpg";
 String Path = "\\Test_Resources\\Upload_Files\\" ; 
 
 
-@Test
+@Test (priority=2)
 public void Run_Test_Case () throws InterruptedException  {
 
+	this.Test_Setup();
 
 Navigate_to_Landing_Page_Method Navigate_LandingPage = new Navigate_to_Landing_Page_Method (this.driver);
 Navigate_LandingPage.Set_URL(URL) ;
@@ -30,6 +31,7 @@ Upload_File.FilePath =  Path ;
 Upload_File.Upload_File();
 Upload_File.Submit_File();
 Upload_File.Valiadte_UploadedFile();
+
 
 }
 

@@ -5,7 +5,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 public class Base_Class{
 	
@@ -13,7 +15,7 @@ public class Base_Class{
 	WebDriver driver ;
 	
 	
-@BeforeSuite
+//@BeforeTest
 public void  Test_Setup()
 	
 	{
@@ -28,10 +30,10 @@ public void  Test_Setup()
     System.out.print("Done");
    }
 
-//@AfterSuite
-//public void Test_TearDown () {
-//
-//	this.driver.close();
-//}
+@AfterTest
+public void Test_TearDown () {
+
+	this.driver.close();
+}
 
 }

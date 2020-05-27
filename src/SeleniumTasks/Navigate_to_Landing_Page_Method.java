@@ -12,9 +12,7 @@ public class Navigate_to_Landing_Page_Method {
 	public Navigate_to_Landing_Page_Method (WebDriver driver )
 	{
 		this.driver = driver ;
-	
-
-			
+				
 	}
 	
 	public void Set_URL (String url) {

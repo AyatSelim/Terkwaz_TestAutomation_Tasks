@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumTasks.Task3_1_DynamicLoad_Run">
+      <class name="SeleniumTasks.Task2_Upload_File_Run">
         <methods>
-          <include name="Task3_run"/>
-          <include name="Test_Setup"/>
+          <include name="Run_Test_Case"/>
+          <include name="Test_TearDown"/>
         </methods>
-      </class> <!-- SeleniumTasks.Task3_1_DynamicLoad_Run -->
+      </class> <!-- SeleniumTasks.Task2_Upload_File_Run -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

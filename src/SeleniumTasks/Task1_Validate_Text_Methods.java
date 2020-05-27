@@ -14,9 +14,8 @@ public class Task1_Validate_Text_Methods {
 		this.driver = driver;
 	}
 
-	WebElement Third_Result;
 	WebElement Search_Box;
-
+	WebElement Third_Result;
 	
 	String search_box = "q";
 	String Third_Result_Path = "//div[contains(@class,'cbphWd')][contains(text(),'What is selenium')]";
