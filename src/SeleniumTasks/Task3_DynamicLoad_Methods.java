@@ -6,11 +6,13 @@ import org.openqa.selenium.WebElement;
 
 public class Task3_DynamicLoad_Methods {
 	
+	WebDriver driver ; 
+	
 	public Task3_DynamicLoad_Methods(WebDriver driver) {
 		this.driver = driver;
 	}
 	
-WebDriver driver ;
+
 
 String Path = "//div[@class='example']/a[2]" ;
 

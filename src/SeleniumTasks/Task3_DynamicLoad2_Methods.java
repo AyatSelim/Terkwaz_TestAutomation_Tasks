@@ -1,5 +1,6 @@
 package SeleniumTasks;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
@@ -26,6 +27,7 @@ String Endmsg_id = "finish";
 WebElement Start_Button ;                                     
 WebElement Endmsg  ;
 
+Page_Actions P_A_Task3 = new Page_Actions();
 	
 public void Click_Start_Button() 
 {
@@ -45,6 +47,11 @@ public void Validate_Text()
 {
 	Endmsg = this.driver.findElement(By.id(Endmsg_id)) ;
 	Assert.assertEquals("Hello World!", Endmsg.getText());
+}
+
+public void Add_ScreenShot3 () throws IOException {
+	
+	P_A_Task3.Take_ScreenShot(this.driver, "_Task3.png");
 }
 
 

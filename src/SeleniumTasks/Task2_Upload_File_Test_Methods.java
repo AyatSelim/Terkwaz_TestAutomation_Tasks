@@ -1,11 +1,11 @@
 package SeleniumTasks;
 
 
+import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
 
 public class Task2_Upload_File_Test_Methods{
 
@@ -18,6 +18,8 @@ public class Task2_Upload_File_Test_Methods{
 	 String FILENAME ;
 	 String FilePath ;
 	 String FileFullPath ;
+	 String ScreenShot_Name ;
+	 String ScrShot_Path ;
 	 
 	 String Link_Xpath = "//div[@class='large-12 columns'][@id='content']/ul/li[18]/a" ;
 	 String FileUploader_id = "file-upload" ;
@@ -29,7 +31,7 @@ public class Task2_Upload_File_Test_Methods{
 	 WebElement FileSubmit;
 	 WebElement uploadedFiles ; 
 	 
-
+	 Page_Actions P_A = new Page_Actions();
 	 
 	 public  void Upload_File( ) throws InterruptedException 
 	 {             
@@ -46,11 +48,21 @@ public class Task2_Upload_File_Test_Methods{
 		
 	 }
 	 
-	 public  void Valiadte_UploadedFile( ) throws InterruptedException 
+	 public  void Valiadte_UploadedFile( ) throws InterruptedException, IOException 
 	 {   
+	    
+		 
 		 uploadedFiles = this.driver.findElement(By.id(uploadedFiles_id));
-		Assert.assertEquals(FILENAME, uploadedFiles.getText());
+		 Assert.assertEquals(FILENAME, uploadedFiles.getText());
+		 
 		
+	 }
+	 
+	 
+	 public void Add_ScrShot () throws IOException {
+		 
+		 P_A.Take_ScreenShot(this.driver, "_Task2.png");
+		 
 	 }
 
 
